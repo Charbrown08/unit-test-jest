@@ -8,6 +8,25 @@ const {
   clearUserDatabaseAll,
 } = require('../../src/services/06-database')
 
+beforeAll(() => {
+  console.log('Before All:level-one')
+})
+afterAll(() => {
+  console.log('After All:level-one')
+})
+
+beforeEach(() => {
+  console.log('Before Each:level-one')
+})
+
+afterEach(() => {
+  console.log('After All:level-one')
+})
+
+test('Test superior level ', () => {
+  console.log('1 - test (level Superior)')
+})
+
 describe('Setup and Teardown', () => {
   describe('Repeating Setup', () => {
     beforeEach(() => {
@@ -56,13 +75,11 @@ describe('Setup and Teardown', () => {
     test('add one user in database', () => {
       addUserDatabase('John')
       const getUsers = getAllUsersDatabase()
-      console.log('🚀 ~ test ~  getUsers:', getUsers)
       expect(getUsers).toEqual(['Maria', 'John'])
     })
     test('add one more user in database', () => {
       addUserDatabase('Marcos')
       const getUsers = getAllUsersDatabase()
-      console.log('🚀 ~ test ~  getUsers:', getUsers)
       expect(getUsers).toEqual(['Maria', 'John', 'Marcos'])
     })
   })
