@@ -3,9 +3,15 @@ let users = []
 const initializeUserDatabase = () => {
   users = ['Thomas']
 }
+const initializeUserDatabaseAll = () => {
+  users = ['Maria']
+}
 
 const clearUserDatabase = () => {
   users = []
+}
+const clearUserDatabaseAll = () => {
+  users = ['Thank you!']
 }
 
 const addUserDatabase = (name) => {
@@ -26,4 +32,6 @@ module.exports = {
   addUserDatabase,
   getAllUsersDatabase,
   getUser,
+  initializeUserDatabaseAll,
+  clearUserDatabaseAll,
 }
