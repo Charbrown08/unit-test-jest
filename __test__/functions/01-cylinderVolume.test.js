@@ -1,4 +1,4 @@
-const cylinderVolume = require('./01-cylinderVolume')
+const cylinderVolume = require('@functions/01-cylinderVolume')
 
 test('one cylinder with radius 3 meters and height 4 meters to equal 81.92809488736235 meters ', () => {
   expect(cylinderVolume(3, 4)).toBe(113.09733552923255)
