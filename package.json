@@ -1,17 +1,9 @@
 {
-  "name": "unit-test-jest",
+  "name": "UNIT-TEST",
   "version": "1.0.0",
-  "description": "Learning Jest from zero to 1000%",
+  "description": "Learning jest",
   "main": "index.js",
-  "scripts": {
-    "test": "jest, npm , tets"
-  },
-  "keywords": [
-    "cmd",
-    "node",
-    "jets"
-  ],
-  "author": "charles Brown <octomarciano@gmail.com>",
+  "author": "Charbrown08 <carlos.moreno.jimenez@konecta-group.com>",
   "license": "MIT",
   "devDependencies": {
     "jest": "^29.7.0"
