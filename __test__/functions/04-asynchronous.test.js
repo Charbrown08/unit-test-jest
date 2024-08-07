@@ -26,13 +26,24 @@ test('the data is peanut butter async', async () => {
 })
 
 test('the fetch fails with an error async ', async () => {
-  // expect.assertions(1)
+  expect.assertions(1)
   try {
-    await fetchData()
+    await fetchDataWithError()
   } catch (error) {
     expect(error).toMatch('error')
   }
 })
 
+// async await with resolve and reject
 
-test('should first', async () => { second })
+test('the data is peanut butter', async () => {
+  await expect(fetchData()).resolves.toBe('peanut butter')
+})
+test('the data is peanut butter', async () => {
+  await expect(fetchDataWithError()).rejects.toMatch('error')
+})
+
+test('the fetch fails with an error', () => {
+  expect.assertions(1)
+  return fetchDataWithError().catch((error) => expect(error).toMatch('error'))
+})
