@@ -8,7 +8,7 @@
  * cylinderVolume(3, 4) // 113.09733552923255
  */
 
-cylinderVolume = (radius, heigth) => {
+const cylinderVolume = (radius, heigth) => {
   return Math.PI * Math.pow(radius, 2) * heigth
 }
 
