@@ -29,8 +29,8 @@ Here’s what I aim to achieve with this repository:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/jest-learning-repo.git
-    cd jest-learning-repo
+    git clone https://github.com/Charbrown08/unit-test-jest.git
+    cd unit-test-jest
     ```
 
 2. **Install Dependencies:**
@@ -59,7 +59,7 @@ If you have suggestions, improvements, or just want to share your Jest knowledge
 
 ## 📬 Contact
 
-For any questions or feedback, you can reach me at [your-email@example.com](mailto:your-email@example.com).
+For any questions or feedback, you can reach me at [octomarciano@gmail.com](mailto:your-email@example.com).
 
 ---
 
