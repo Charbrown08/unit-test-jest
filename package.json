@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Charbrown08 <carlos.moreno.jimenez@konecta-group.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "jest": "^29.7.0"
   }
