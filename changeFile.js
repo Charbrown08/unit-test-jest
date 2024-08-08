@@ -1,13 +1,20 @@
 const { exec } = require('child_process')
 const { getChangedFilesForRoots } = require('jest-changed-files')
+const path = require('path')
 
-const roots = [__dirname + '/__test__']
+const roots = [path.join(__dirname, '__test__')]
 
-getChangedFilesForRoots(roots, { lastCommit: true })
+getChangedFilesForRoots(roots, {
+  lastCommit: true,
+  withAncestor: true,
+  changedSince: 'HEAD~1',
+})
   .then((result) => {
     const changedTestFiles = [...result.changedFiles]
       .filter((file) => file.endsWith('.test.js') || file.endsWith('.spec.js'))
       .map((file) => file.replace(/\\/g, '/'))
+
+    console.log('Changed test files:', changedTestFiles)
 
     if (changedTestFiles.length > 0) {
       exec(
