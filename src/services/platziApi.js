@@ -11,6 +11,4 @@ getOneProduct()
   .then((product) => console.log(' product:', product))
   .catch((error) => console.error('Error getting product:', error))
 
-module.exports = {
-  getOneProduct,
-}
+module.exports = getOneProduct
