@@ -3,12 +3,23 @@
   "version": "1.0.0",
   "description": "Learning jest",
   "main": "index.js",
-  "author": "Charbrown08 <carlos.moreno.jimenez@konecta-group.com>",
+  "author": "charbrown08 <octomarciano@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
+    "test:watchAll": "jest --watchAll",
+    "test:coverage:watch": "jest --coverage --watch",
+    "test:verbose:watch": "jest --verbose --watch",
+    "test:coverage:watchAll": "jest --coverage --watchAll",
+    "test:verbose:watchAll": "jest --verbose --watchAll",
+    "test:watch": "jest --watch"
   },
   "devDependencies": {
     "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.3"
   }
 }
